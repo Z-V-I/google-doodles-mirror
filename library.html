@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search our Doodle Library Collection - Google Doodles</title>
+  <meta name="description" content="Search our Google Doodles library to find collections or individual Doodles sorted by date, topic, and additional filters.">
+  <link rel="icon" sizes="192x192" href="_clone_search/favicon-192.png">
+  <link rel="apple-touch-icon" href="_clone_search/favicon-192.png">
+  <link rel="icon" sizes="32x32" href="_clone_search/favicon-32.png">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="_clone_search/f90e535b8a14784fb143c98e6c3624c4f0761c2eda4885a3923e4c0a6af066ac.index.min.css">
+  <style>
+    .search-doodle__results-loading, .search-doodle__results-empty { display: none; }
+    .search-doodle__results[data-state="loading"] .search-doodle__results-wrapper { display: none; }
+    .search-doodle__results[data-state="loading"] .search-doodle__results-loading { display: block; }
+    .search-doodle__results[data-state="empty"] .search-doodle__results-wrapper { display: none; }
+    .search-doodle__results[data-state="empty"] .search-doodle__results-empty { display: flex; }
+    .search-doodle__results-show-more { text-align: center; padding: 0 0 72px; }
+    .search-doodle__results-show-more[hidden] { display: none; }
+    .doodle-card-img img { width: 100%; height: auto; display: block; }
+    .search-doodle__filter .glue-expansion-panel__toggle--open .glue-expansion-panel__header-arrow { transform: rotate(180deg); }
+    .glue-header__link[aria-current="page"] { color: #1967d2; }
+    .glue-header__link[aria-current="page"]::after { content: ""; display: block; width: 100%; border-bottom: 2px solid #1967d2; margin-top: 2px; }
+  </style>
+</head>
+
+<body class="glue-body glue-header-single">
+<header class="glue-header glue-header--single glue-header--no-cta" aria-expanded="false">
+  <a href="#content" class="glue-header__link glue-header__skip-content">Jump to content</a>
+  <div class="glue-header__bar glue-header__bar--mobile">
+    <div class="glue-header__tier">
+      <div class="glue-header__container">
+        <div class="glue-header__lock-up">
+          <div class="glue-header__hamburger">
+            <button class="glue-header__drawer-toggle-btn" aria-label="Open the navigation drawer" aria-controls="glue-drawer-lib" aria-expanded="false" aria-haspopup="true">
+              <svg class="glue-icon glue-icon--24px" role="presentation" aria-hidden="true">
+                <use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#menu"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-header-wrapper">
+            <div class="glue-header__logo">
+              <a class="glue-header__logo-link" href="index.html" title="Google doodles">
+                <div class="glue-header__logo-container">
+                  <svg class="glue-header__logo-svg" role="presentation" aria-hidden="true">
+                    <use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#google-color-logo"></use>
+                  </svg>
+                </div>
+                <span class="glue-header__logo--product">
+                  <svg class="glue-header__logo-svg" role="presentation" aria-hidden="true">
+                    <use href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#doodle-logo"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <div class="glue-header__tier">
+              <div class="glue-header__container">
+                <div class="glue-header__supplemental">
+                  <ul class="glue-header__list">
+                    <li class="glue-header__item glue-header__item">
+                      <a class="glue-header__link mobile-search-link" href="library.html" aria-label="Search" aria-current="page">
+                        <svg role="presentation" aria-hidden="true" class="glue-icon glue-icon--24px">
+                          <use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#search"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="glue-header__bar glue-header__bar--desktop glue-header__drawer" id="glue-drawer-lib" style="position: static; top: -64px;">
+    <div class="glue-header__tier">
+      <div class="glue-header__container">
+        <div class="glue-header__lock-up">
+          <div class="glue-header__logo">
+            <a class="glue-header__logo-link" href="index.html" title="Google doodles">
+              <div class="glue-header__logo-container">
+                <svg class="glue-header__logo-svg" role="presentation" aria-hidden="true">
+                  <use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#google-color-logo"></use>
+                </svg>
+              </div>
+              <span class="glue-header__logo--product">
+                <svg class="glue-header__logo-svg" role="presentation" aria-hidden="true">
+                  <use href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#doodle-logo"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="glue-header__container glue-header__container--linkbar">
+        <nav class="glue-header__link-bar">
+          <ul class="glue-header__list">
+            <li class="glue-header__item glue-header__item">
+              <a class="glue-header__link" href="library.html" aria-current="page">Library</a>
+            </li>
+            <li class="glue-header__item glue-header__item">
+              <a class="glue-header__link" href="about.html">Creating a Doodle</a>
+            </li>
+            <li class="glue-header__item glue-header__item">
+              <a class="glue-header__link" href="about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="glue-header__container">
+        <div class="glue-header__supplemental">
+          <ul class="glue-header__list">
+            <li class="glue-header__item glue-header__item">
+              <a class="glue-header__link" href="library.html" aria-label="Search" aria-current="page">
+                <svg role="presentation" aria-hidden="true" class="glue-icon glue-icon--18px">
+                  <use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#search"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="glue-header__drawer-backdrop" aria-label="close menu"></div>
+</header>
+
+<div id="content">
+
+<div class="main-page">
+
+  <div class="search-doodle" data-doodle-url="/doodle/">
+  <div class="search-doodle__box">
+    <form class="search-doodle__box-form glue-page" method="get">
+      <div class="search-doodle__box-wrapper">
+        <svg class="search-doodle__box-icon" role="presentation" aria-hidden="true">
+          <use href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#search"></use>
+        </svg>
+        <input class="search-doodle__box-input" type="text" name="title_like" placeholder="Search Doodles" aria-label="Search Doodles">
+        <div class="search-doodle__box-input-border"></div>
+        <div class="search-doodle__box-button_wrapper">
+          <button class="search-doodle__box-button_search" type="submit" name="search">
+            <span class="search-doodle__box-button_search-input">Search</span>
+            <svg class="glue-icon" alt="" role="img">
+              <use xlink:href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#right-arrow"></use>
+            </svg>
+          </button>
+          <button class="search-doodle__box-button_random" type="submit" name="random">
+            Surprise me
+            <svg class="glue-icon" alt="" role="img">
+              <use xlink:href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#sparkles"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="search-doodle__box__tag_wrapper">
+        <div class="search-doodle__box__tag"></div>
+        <button class="search-doodle__box__tag_clear cta cta--1" type="button">
+          Clear all
+          <svg class="glue-icon" alt="" role="img">
+            <use xlink:href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+    <template class="search-doodle__box__tag-template">
+      <div class="search-doodle__tag-item" data-name="" data-value="">
+        <span class="search-doodle__tag-item-label"></span>
+        <div class="search-doodle__tag-item-icon">
+          <svg role="presentation" aria-hidden="true" class="glue-icon checkmark">
+            <use href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#checkmark"></use>
+          </svg>
+          <svg role="presentation" aria-hidden="true" class="glue-icon close">
+            <use href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#close"></use>
+          </svg>
+        </div>
+      </div>
+    </template>
+  </div>
+
+  <div class="search-doodle__filter doodle-module">
+    <div class="search-doodle__filter_mobile-wrapper glue-expansion-panels glue-page">
+      <input type="checkbox" class="search-doodle__filter_mobile-panel__checkbox" id="search-doodle__filter_mobile-panel">
+      <label class="search-doodle__filter_mobile-panel__toggle glue-expansion-panel__toggle" for="search-doodle__filter_mobile-panel">
+        <span class="glue-expansion-panel__button" data-glue-expansion-panel-toggle-for="search-doodle__filter-mobile">
+          <span class="glue-expansion-panel__header-text">Filters</span>
+          <span class="glue-expansion-panel__header-counter"></span>
+          <svg role="presentation" aria-hidden="true" class="glue-icon glue-expansion-panel__header-arrow">
+            <use href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#plus"></use>
+          </svg>
+        </span>
+      </label>
+      <div class="search-doodle__filter_mobile-panel__content glue-expansion-panel__content tabs-container">
+        <form class="search-doodle__filter-form">
+          <div class="glue-expansion-panels search-doodle__filter-wrapper">
+
+            <div class="search-doodle__filter-panel glue-expansion-panel">
+              <p class="glue-expansion-panel__toggle">
+                <span class="glue-expansion-panel__button" data-glue-expansion-panel-toggle-for="search-doodle__filter-1-content">
+                  <span class="glue-expansion-panel__header-text">Date</span>
+                  <span class="glue-expansion-panel__header-counter"></span>
+                  <svg role="presentation" aria-hidden="true" class="glue-icon glue-expansion-panel__header-arrow">
+                    <use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#expand-more"></use>
+                  </svg>
+                </span>
+              </p>
+              <div class="search-doodle__filter-panel__content glue-expansion-panel__content" id="search-doodle__filter-1-content">
+                <div class="glue-page">
+                  <div class="search-doodle__filter-panel__content-date">
+                    <div class="search-doodle__filter-panel__content-date__dropdown dropdown--year">
+                      <div class="search-doodle__filter-panel__content-date__dropdown-label label--year">Year</div>
+                      <select name="date_like_year" class="search-doodle__filter-panel__content-date__dropdown-select select--year"></select>
+                    </div>
+                    <div class="search-doodle__filter-panel__content-date__dropdown dropdown--month">
+                      <div class="search-doodle__filter-panel__content-date__dropdown-label label--month">Month</div>
+                      <select name="date_like_month" class="search-doodle__filter-panel__content-date__dropdown-select select--month"></select>
+                    </div>
+                    <div class="search-doodle__filter-panel__content-date__dropdown dropdown--day">
+                      <div class="search-doodle__filter-panel__content-date__dropdown-label label--day">Day</div>
+                      <select name="date_like_day" class="search-doodle__filter-panel__content-date__dropdown-select select--day"></select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-doodle__filter-panel glue-expansion-panel">
+              <p class="glue-expansion-panel__toggle">
+                <span class="glue-expansion-panel__button" data-glue-expansion-panel-toggle-for="search-doodle__filter-3-content">
+                  <span class="glue-expansion-panel__header-text">Style</span>
+                  <span class="glue-expansion-panel__header-counter"></span>
+                  <svg role="presentation" aria-hidden="true" class="glue-icon glue-expansion-panel__header-arrow">
+                    <use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#expand-more"></use>
+                  </svg>
+                </span>
+              </p>
+              <div class="search-doodle__filter-panel__content glue-expansion-panel__content" id="search-doodle__filter-3-content">
+                <div class="glue-page">
+                  <div class="search-doodle__filter-panel__content-tags" id="filter-tags-style"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-doodle__filter-panel glue-expansion-panel">
+              <p class="glue-expansion-panel__toggle">
+                <span class="glue-expansion-panel__button" data-glue-expansion-panel-toggle-for="search-doodle__filter-4-content">
+                  <span class="glue-expansion-panel__header-text">Format</span>
+                  <span class="glue-expansion-panel__header-counter"></span>
+                  <svg role="presentation" aria-hidden="true" class="glue-icon glue-expansion-panel__header-arrow">
+                    <use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#expand-more"></use>
+                  </svg>
+                </span>
+              </p>
+              <div class="search-doodle__filter-panel__content glue-expansion-panel__content" id="search-doodle__filter-4-content">
+                <div class="glue-page">
+                  <div class="search-doodle__filter-panel__content-tags" id="filter-tags-format"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-doodle__filter-panel glue-expansion-panel">
+              <p class="glue-expansion-panel__toggle">
+                <span class="glue-expansion-panel__button" data-glue-expansion-panel-toggle-for="search-doodle__filter-5-content">
+                  <span class="glue-expansion-panel__header-text">Color</span>
+                  <span class="glue-expansion-panel__header-counter"></span>
+                  <svg role="presentation" aria-hidden="true" class="glue-icon glue-expansion-panel__header-arrow">
+                    <use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#expand-more"></use>
+                  </svg>
+                </span>
+              </p>
+              <div class="search-doodle__filter-panel__content glue-expansion-panel__content" id="search-doodle__filter-5-content">
+                <div class="glue-page">
+                  <div class="search-doodle__filter-panel__content-tags" id="filter-tags-color"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-doodle__filter-panel glue-expansion-panel">
+              <p class="glue-expansion-panel__toggle">
+                <span class="glue-expansion-panel__button" data-glue-expansion-panel-toggle-for="search-doodle__filter-6-content">
+                  <span class="glue-expansion-panel__header-text">Topic</span>
+                  <span class="glue-expansion-panel__header-counter"></span>
+                  <svg role="presentation" aria-hidden="true" class="glue-icon glue-expansion-panel__header-arrow">
+                    <use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#expand-more"></use>
+                  </svg>
+                </span>
+              </p>
+              <div class="search-doodle__filter-panel__content glue-expansion-panel__content" id="search-doodle__filter-6-content">
+                <div class="glue-page">
+                  <div class="search-doodle__filter-panel__content-tags" id="filter-tags-topic"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-doodle__filter-panel glue-expansion-panel">
+              <p class="glue-expansion-panel__toggle">
+                <span class="glue-expansion-panel__button" id="search-doodle__filter-7-toggle" data-glue-expansion-panel-toggle-for="search-doodle__filter-7-content">
+                  <span class="glue-expansion-panel__header-text">Sort</span>
+                  <span class="glue-expansion-panel__header-counter"></span>
+                  <svg role="presentation" aria-hidden="true" class="glue-icon glue-expansion-panel__header-arrow">
+                    <use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#expand-more"></use>
+                  </svg>
+                </span>
+              </p>
+              <div class="search-doodle__filter-panel__content glue-expansion-panel__content" id="search-doodle__filter-7-content">
+                <div class="glue-page">
+                  <div class="search-doodle__filter-panel__content-tags" id="filter-tags-sort"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-doodle__results" data-state="loading">
+    <template id="search-doodle__card-template">
+      <div class="doodle-card ">
+        <a class="doodle-card-cta" href="doodle.html?slug=">
+          <div class="doodle-card-wrapper">
+            <div class="doodle-card-img">
+              <img src="" alt="">
+            </div>
+            <div class="doodle-card-content">
+              <p class="doodle-card-content__date"></p>
+              <p class="doodle-card-content__event"></p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </template>
+    <div class="glue-page">
+      <div class="search-doodle__results-wrapper"></div>
+      <div class="search-doodle__results-loading">
+        <div class="loader">
+          <img alt="" src="_clone_search/71a12b05f17e71ab1ca4d61ccae6c98854bb65b40f0d8ece82be1f661088db6e.loading.gif">
+        </div>
+      </div>
+      <div class="search-doodle__results-empty">
+        <p class="search-doodle__results-empty-label">No results found. Try a different search.</p>
+        <p class="search-doodle__results-empty-description">The Doodle you're looking for may not match the current filters. Clear some filters and try again.</p>
+      </div>
+      <div class="search-doodle__results-show-more" hidden>
+        <button class="cta cta--1 search-doodle__results-show-more__button" type="button">
+          Show more
+          <svg class="glue-icon" alt="" role="img">
+            <use xlink:href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#expand-more"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+
+<footer class="glue-footer">
+  <h2 class="glue-visually-hidden">Footer Links</h2>
+  <section class="glue-footer__upper">
+    <section class="glue-social">
+      <div class="glue-social__group">
+        <h3 class="glue-social__title glue-social__title--inline">Follow us</h3>
+        <ul class="glue-social__list" role="list">
+          <li class="glue-social__item"><a class="glue-social__link" href="https://www.linkedin.com/company/google" title="Linkedin" target="_blank"><svg role="presentation" aria-hidden="true" class="glue-icon glue-icon--24px glue-icon--social"><use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#post-linkedin"></use></svg></a></li>
+          <li class="glue-social__item"><a class="glue-social__link" href="https://www.facebook.com/Google/" title="Facebook" target="_blank"><svg role="presentation" aria-hidden="true" class="glue-icon glue-icon--24px glue-icon--social"><use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#post-facebook"></use></svg></a></li>
+          <li class="glue-social__item"><a class="glue-social__link" href="https://www.instagram.com/google/" title="Instagram" target="_blank"><svg role="presentation" aria-hidden="true" class="glue-icon glue-icon--24px glue-icon--social"><use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#instagram"></use></svg></a></li>
+          <li class="glue-social__item"><a class="glue-social__link" href="https://www.x.com/@googledoodles" title="X" target="_blank"><svg role="presentation" aria-hidden="true" class="glue-icon glue-icon--24px glue-icon--social"><use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#x"></use></svg></a></li>
+          <li class="glue-social__item"><a class="glue-social__link" href="https://www.youtube.com/@googledoodles" title="Youtube" target="_blank"><svg role="presentation" aria-hidden="true" class="glue-icon glue-icon--24px glue-icon--social"><use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#video-youtube"></use></svg></a></li>
+        </ul>
+      </div>
+    </section>
+  </section>
+  <nav class="glue-footer__site-links">
+    <div class="glue-footer__site-links-grid glue-footer__site-links-grid--1-col">
+      <div class="glue-footer__site-links-column">
+        <h3 class="glue-footer__site-links-header">
+          <span class="glue-footer__site-links-header-button">
+            <span class="glue-footer__site-links-header-text">Doodles</span>
+            <svg role="presentation" aria-hidden="true" class="glue-icon glue-icon--footer glue-expansion-panel__header-arrow"><use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#expand-more"></use></svg>
+          </span>
+        </h3>
+        <div class="glue-footer__site-links-list">
+          <ul class="glue-no-bullet" role="list">
+            <li class="glue-footer__site-links-list-item"><a class="glue-footer__link" href="library.html">Library</a></li>
+            <li class="glue-footer__site-links-list-item"><a class="glue-footer__link" href="about.html">Creating a Doodle</a></li>
+            <li class="glue-footer__site-links-list-item"><a class="glue-footer__link" href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="glue-page glue-spacer-4-top">
+    <p class="recaptcha-disclaimer">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+  </div>
+  <section class="glue-footer__global">
+    <div class="glue-footer__logo">
+      <a href="https://google.com" title="Google" aria-label="Google">
+        <svg role="presentation" aria-hidden="true" class="glue-footer__logo-img"><use href="_clone_search/0f99e02819f0bba398fbcbeff94c8a0eb698e988148884f15cb92c39c17487d7.glue-icons.svg#google-color-logo"></use></svg>
+      </a>
+    </div>
+    <div class="glue-footer__language">
+      <a class="glue-footer__link" href="https://www.google.com/intl/en/options/">More Google products</a>
+    </div>
+    <div class="glue-footer__global-links">
+      <a class="glue-footer__link" href="https://policies.google.com/privacy">Privacy</a>
+      <a class="glue-footer__link" href="https://policies.google.com/terms">Terms</a>
+    </div>
+  </section>
+</footer>
+
+<script src="doodles_data.js"></script>
+<script>
+(function () {
+  'use strict';
+  var ALL = window.DOODLES || [];
+  var PER_PAGE = 24;
+  var state = { q: '', year: '', month: '', day: '', style: [], format: [], color: [], topic: [], sort: 'sort_direction-asc__order_by-title' };
+  var shown = PER_PAGE;
+  var results = [];
+
+  function qs(s, r) { return (r || document).querySelector(s); }
+  function qsa(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function iso(d) { var s = d.dateISO || ''; var p = s.split('-'); return { y: p[0] || '', m: p[1] || '', day: p[2] || '' }; }
+  function fmtDate(d) { var i = iso(d); if (!i.y) return ''; return d.date ? String(d.date) : i.y; }
+  function imgSrc(d) { return encodeURI(d.image_file || ''); }
+
+  var STYLE2FMT = { animation: ['animated'], multimedia: ['video'], '2d': ['animated', 'game'], '3d': ['animated', 'game'] };
+  var FORMAT_VAL = { 'animated gif': 'animated', 'interactive game': 'game', 'slideshow': 'slideshow', 'still image': 'still', 'video': 'video' };
+  var COLORS = ['multicolor', 'monochrome', 'red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'purple', 'pink', 'grey', 'white', 'black'];
+  var SORTS = [
+    ['sort_direction-asc__order_by-title', 'A to Z'],
+    ['sort_direction-desc__order_by-title', 'Z to A'],
+    ['sort_direction-asc__order_by-date', 'Oldest to newest'],
+    ['sort_direction-desc__order_by-date', 'Newest to oldest']
+  ];
+
+  function matches(d) {
+    if (state.q) {
+      var hay = (d.title + ' ' + (d.description || '')).toLowerCase();
+      if (hay.indexOf(state.q) < 0) return false;
+    }
+    var i = iso(d);
+    if (state.year && i.y !== state.year) return false;
+    if (state.month && i.m !== state.month) return false;
+    if (state.day && i.day !== state.day) return false;
+    if (state.style.length) {
+      var fm = d.format || '';
+      var ok = false;
+      state.style.forEach(function (s) { if (STYLE2FMT[s].indexOf(fm) >= 0) ok = true; });
+      if (!ok) return false;
+    }
+    if (state.format.length && state.format.indexOf(d.format) < 0) return false;
+    if (state.color.length && state.color.indexOf(d.color) < 0) return false;
+    if (state.topic.length) {
+      var tp = d.topics || [];
+      if (!state.topic.some(function (t) { return tp.indexOf(t) >= 0; })) return false;
+    }
+    return true;
+  }
+
+  function sortList(a, b) {
+    var byDate = state.sort.indexOf('order_by-date') >= 0;
+    var dir = state.sort.indexOf('sort_direction-desc') === 0 ? -1 : 1;
+    if (byDate) return ((a.dateISO || '') < (b.dateISO || '') ? -1 : ((a.dateISO || '') > (b.dateISO || '') ? 1 : 0)) * dir;
+    return a.title.localeCompare(b.title) * dir;
+  }
+
+  function cardHTML(d) {
+    return '<div class="doodle-card "><a class="doodle-card-cta" href="doodle.html?slug=' + encodeURIComponent(d.slug || '') + '">' +
+      '<div class="doodle-card-wrapper"><div class="doodle-card-img"><img src="' + imgSrc(d) + '" alt="' + esc(d.title) + '" loading="lazy"></div>' +
+      '<div class="doodle-card-content"><p class="doodle-card-content__date">' + esc(fmtDate(d)) + '</p>' +
+      '<p class="doodle-card-content__event">' + esc(d.title) + '</p></div></div></a></div>';
+  }
+
+  function updateTags() {
+    var box = qs('.search-doodle__box__tag');
+    box.innerHTML = '';
+    var clear = qs('.search-doodle__box__tag_clear');
+    var hasTag = false;
+    function add(name, value, label) {
+      var tpl = qs('.search-doodle__box__tag-template');
+      var node = document.importNode(tpl.content, true).firstElementChild;
+      node.setAttribute('data-name', name);
+      node.setAttribute('data-value', value);
+      qs('.search-doodle__tag-item-label', node).textContent = label;
+      qs('.search-doodle__tag-item-icon .close', node).classList.add('search-doodle__box__tag-icon');
+      box.appendChild(node);
+      hasTag = true;
+    }
+    if (state.year || state.month || state.day) {
+      add('date', 'any', 'Date: ' + (state.year || '') + (state.month ? '-' + state.month : '') + (state.day ? '-' + state.day : ''));
+    }
+    if (state.q) add('title_like', state.q, 'Search: "' + state.q + '"');
+    var map = { style: 'Style', format: 'Format', color: 'Color', topic: 'Topic' };
+    Object.keys(map).forEach(function (k) {
+      state[k].forEach(function (v) { add(k, v, map[k] + ': ' + v); });
+    });
+    clear.style.display = hasTag ? '' : 'none';
+  }
+
+  function render() {
+    var wrap = qs('.search-doodle__results-wrapper');
+    var cont = qs('.search-doodle__results');
+    var slice = results.slice(0, shown);
+    wrap.innerHTML = slice.map(cardHTML).join('');
+    cont.setAttribute('data-state', results.length === 0 ? 'empty' : 'ok');
+    var more = qs('.search-doodle__results-show-more');
+    more.hidden = shown >= results.length;
+    updateTags();
+  }
+
+  function refresh() {
+    results = ALL.filter(matches).sort(sortList);
+    shown = PER_PAGE;
+    render();
+  }
+
+  function buildTags() {
+    // Year
+    var years = {};
+    ALL.forEach(function (d) { var y = iso(d).y; if (y) years[y] = 1; });
+    var yl = Object.keys(years).sort().reverse();
+    var ySel = qs('select[name="date_like_year"]');
+    yl.forEach(function (y) {
+      var o = document.createElement('option'); o.value = y; o.textContent = y; ySel.appendChild(o);
+    });
+    var mSel = qs('select[name="date_like_month"]');
+    var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    MONTHS.forEach(function (m, idx) {
+      var o = document.createElement('option'); o.value = ('0' + (idx + 1)).slice(-2); o.textContent = m; mSel.appendChild(o);
+    });
+    var dSel = qs('select[name="date_like_day"]');
+    for (var dd = 1; dd <= 31; dd++) {
+      var o2 = document.createElement('option'); o2.value = ('0' + dd).slice(-2); o2.textContent = dd; dSel.appendChild(o2);
+    }
+
+    function tagGroup(containerId, name, items, checkedMap) {
+      var box = qs('#' + containerId);
+      items.forEach(function (it) {
+        var label = document.createElement('label');
+        label.className = 'search-doodle__tag-item as-input';
+        var inp = document.createElement('input');
+        inp.type = 'checkbox';
+        inp.name = name;
+        inp.value = it[0];
+        if (checkedMap && checkedMap[it[0]]) inp.checked = true;
+        inp.addEventListener('change', onTagChange);
+        var span = document.createElement('span');
+        span.className = 'search-doodle__tag-item-label';
+        span.textContent = it[1];
+        label.appendChild(inp); label.appendChild(span);
+        var icon = document.createElement('div');
+        icon.className = 'search-doodle__tag-item-icon';
+        icon.innerHTML = '<svg role="presentation" aria-hidden="true" class="glue-icon checkmark"><use href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#checkmark"></use></svg>' +
+          '<svg role="presentation" aria-hidden="true" class="glue-icon close"><use href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#close"></use></svg>';
+        label.appendChild(icon);
+        var border = document.createElement('div');
+        border.className = 'search-doodle__tag-item-border';
+        label.appendChild(border);
+        box.appendChild(label);
+      });
+    }
+
+    tagGroup('filter-tags-style', 'art_style_tags',
+      [['animation', 'Animation'], ['multimedia', 'Multimedia'], ['2d', '2D'], ['3d', '3D']]);
+    tagGroup('filter-tags-format', 'form_tags',
+      [['animated gif', 'Animated GIF'], ['interactive game', 'Interactive game'], ['slideshow', 'Slideshow'], ['still image', 'Still image'], ['video', 'Video']]);
+    tagGroup('filter-tags-color', 'color_tags', COLORS.map(function (c) { return [c, c.charAt(0).toUpperCase() + c.slice(1)]; }));
+
+    var tc = {};
+    ALL.forEach(function (d) { (d.topics || []).forEach(function (tp) { tc[tp] = (tc[tp] || 0) + 1; }); });
+    var tArr = Object.keys(tc).sort(function (a, b) { return tc[b] - tc[a] || a.localeCompare(b); }).slice(0, 60);
+    tagGroup('filter-tags-topic', 'topic_tags', tArr.map(function (t) { return [t, t]; }));
+
+    // Sort radio
+    var sBox = qs('#filter-tags-sort');
+    SORTS.forEach(function (s, idx) {
+      var label = document.createElement('label');
+      label.className = 'search-doodle__tag-item as-input';
+      var inp = document.createElement('input');
+      inp.type = 'radio';
+      inp.name = 'sort_tags';
+      inp.value = s[0];
+      if (idx === 0) inp.checked = true;
+      inp.addEventListener('change', function () {
+        state.sort = s[0];
+        refresh();
+      });
+      var span = document.createElement('span');
+      span.className = 'search-doodle__tag-item-label';
+      span.textContent = s[1];
+      label.appendChild(inp); label.appendChild(span);
+      var icon = document.createElement('div');
+      icon.className = 'search-doodle__tag-item-icon';
+      icon.innerHTML = '<svg role="presentation" aria-hidden="true" class="glue-icon checkmark"><use href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#checkmark"></use></svg>' +
+        '<svg role="presentation" aria-hidden="true" class="glue-icon close"><use href="_clone_search/37ae077da8a25b6950c926233ed752617048c50792204bc7b9d6332bbb7a3a5f.icons.svg#close"></use></svg>';
+      label.appendChild(icon);
+      var border = document.createElement('div');
+      border.className = 'search-doodle__tag-item-border';
+      label.appendChild(border);
+      sBox.appendChild(label);
+    });
+  }
+
+  function onTagChange(ev) {
+    var inp = ev.target;
+    var key = inp.name === 'art_style_tags' ? 'style' : inp.name === 'form_tags' ? 'format' : inp.name === 'color_tags' ? 'color' : inp.name === 'topic_tags' ? 'topic' : null;
+    if (!key) return;
+    var arr = state[key];
+    var v = inp.value;
+    var idx = arr.indexOf(v);
+    if (inp.checked && idx < 0) arr.push(v);
+    if (!inp.checked && idx >= 0) arr.splice(idx, 1);
+    refresh();
+  }
+
+  function clearAll() {
+    state = { q: '', year: '', month: '', day: '', style: [], format: [], color: [], topic: [], sort: 'sort_direction-asc__order_by-title' };
+    qs('.search-doodle__box-input').value = '';
+    qsa('.search-doodle__filter-form input[type="checkbox"]').forEach(function (c) { c.checked = false; });
+    qsa('.search-doodle__filter-form input[type="radio"]').forEach(function (c, i) { c.checked = i === 0; });
+    qsa('.search-doodle__filter-form select').forEach(function (s) { s.selectedIndex = 0; });
+    refresh();
+  }
+
+  function init() {
+    buildTags();
+
+    var boxForm = qs('.search-doodle__box-form');
+    boxForm.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var random = ev.submitter && ev.submitter.name === 'random';
+      state.q = qs('.search-doodle__box-input').value.trim().toLowerCase();
+      if (random) {
+        var pool = results.length ? results : ALL;
+        var pick = pool[Math.floor(Math.random() * pool.length)];
+        if (pick) location.href = 'doodle.html?slug=' + encodeURIComponent(pick.slug);
+        return;
+      }
+      refresh();
+    });
+
+    var timer = null;
+    qs('.search-doodle__box-input').addEventListener('input', function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        state.q = qs('.search-doodle__box-input').value.trim().toLowerCase();
+        refresh();
+      }, 300);
+    });
+
+    qs('.search-doodle__box__tag_clear').addEventListener('click', clearAll);
+
+    qsa('select[name="date_like_year"], select[name="date_like_month"], select[name="date_like_day"]').forEach(function (sel) {
+      sel.addEventListener('change', function () {
+        state.year = qs('select[name="date_like_year"]').value;
+        state.month = qs('select[name="date_like_month"]').value;
+        state.day = qs('select[name="date_like_day"]').value;
+        refresh();
+      });
+    });
+
+    qs('.search-doodle__results-show-more__button').addEventListener('click', function () {
+      shown += PER_PAGE;
+      render();
+    });
+
+    qs('.search-doodle__box__tag').addEventListener('click', function (ev) {
+      var tag = ev.target.closest('.search-doodle__tag-item');
+      if (!tag) return;
+      var name = tag.getAttribute('data-name');
+      var value = tag.getAttribute('data-value');
+      if (name === 'title_like') {
+        state.q = '';
+        qs('.search-doodle__box-input').value = '';
+      } else if (name === 'date') {
+        state.year = ''; state.month = ''; state.day = '';
+        qsa('.search-doodle__filter-form select').forEach(function (s) { s.selectedIndex = 0; });
+      } else {
+        var arr = state[name];
+        var idx = arr.indexOf(value);
+        if (idx >= 0) arr.splice(idx, 1);
+        var input = qsa('.search-doodle__filter-form input[type="checkbox"]').filter(function (c) { return c.name === (name === 'style' ? 'art_style_tags' : name === 'format' ? 'form_tags' : name === 'color' ? 'color_tags' : 'topic_tags') && c.value === value; })[0];
+        if (input) input.checked = false;
+      }
+      refresh();
+    });
+
+    // expansion panels
+    qsa('.search-doodle__filter-panel.glue-expansion-panel').forEach(function (panel) {
+      var toggle = qs('.glue-expansion-panel__button[data-glue-expansion-panel-toggle-for]', panel);
+      if (!toggle) return;
+      toggle.addEventListener('click', function () {
+        var id = toggle.getAttribute('data-glue-expansion-panel-toggle-for');
+        var content = document.getElementById(id);
+        if (!content) return;
+        var open = content.style.height && content.style.height !== '0px';
+        if (open) {
+          content.style.height = '0px';
+          panel.classList.remove('glue-is-expanded');
+        } else {
+          content.style.height = content.scrollHeight + 'px';
+          panel.classList.add('glue-is-expanded');
+        }
+      });
+    });
+
+    // 桌面端：初始展开所有筛选面板（官方 hydration 行为）
+    qsa('.search-doodle__filter-panel.glue-expansion-panel').forEach(function (panel) {
+      var toggle = qs('.glue-expansion-panel__button[data-glue-expansion-panel-toggle-for]', panel);
+      if (!toggle) return;
+      var id = toggle.getAttribute('data-glue-expansion-panel-toggle-for');
+      var content = document.getElementById(id);
+      if (!content) return;
+      content.style.height = content.scrollHeight + 'px';
+      panel.classList.add('glue-is-expanded');
+    });
+
+    refresh();
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
+</body>
+</html>
+

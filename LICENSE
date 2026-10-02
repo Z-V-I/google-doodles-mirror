@@ -1,0 +1,48 @@
+MIT License
+
+Copyright (c) 2026 <在此填写你的名字或 ID>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+适用范围（重要，请先读这一段）
+================================================================================
+
+**上面这段 MIT 许可只覆盖本仓库中的「工具与脚本」代码**，具体是：
+
+  · serve.py
+  · _tools/ 下的全部构建 / 修补 / 验收脚本
+  · _deploy_src/ 下的部署配置（_headers、_redirects、robots.txt、shim）
+
+**以下内容不在本许可范围内**，其版权归各自权利人（原始页面与素材归 Google LLC
+及其他权利人所有）：
+
+  · site/ 下的页面 HTML / CSS / JS —— 由 doodles.google 的页面抓取并改造而来
+  · 站内全部涂鸦图片、字体、原站运行时代码
+  · 项目根目录的原始素材（图片、CSV 等，均未纳入本仓库）
+
+本仓库是一个**技术存档与学习项目**，演示的是「如何把一个依赖第三方生态的网站
+（CDN、云接口、身份验证、埋点）改造为可离线自足运行，且外观与原站一致」这套
+工程方法。「改造代码」与「被改造的素材」的版权边界，见 /disclaimer/ 页面与
+DEPLOY.md 第 10 节。
+
+本项目不是 doodles.google 的官方镜像，与 Google LLC 无任何关联，也不代表其立场。
+
+如果你打算复用本仓库的改造代码，请自行确认你对目标站点的抓取与再分发是否符合
+当地法律及该站点的服务条款。

@@ -1,0 +1,8 @@
+{
+  "blocking": {},
+  "anchors": {
+    "fonts\\fonts.css": [
+      "https://fonts.google.com/license/googlerestricted"
+    ]
+  }
+}

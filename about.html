@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - gøøgle Doodles</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="logo" style="margin-right:8px;">
+    <span class="g1">g</span><span class="g2">ø</span><span class="g3">ø</span><span class="g4">g</span><span class="g5">l</span><span class="g6">e</span><span class="ball"></span>
+  </a>
+  <nav>
+    <a href="library.html">Library</a>
+    <a href="about.html" class="active">Creating a Doodle</a>
+    <a href="about.html" class="active">About</a>
+  </nav>
+  <div class="spacer"></div>
+</header>
+
+<div class="detail-wrap" style="max-width:760px;">
+  <div class="detail-card">
+    <div class="detail-body">
+      <h1 class="detail-title">关于 gøøgle Doodles</h1>
+      <p class="detail-desc" style="margin-bottom:16px;">
+        这是对 <a href="https://doodles.google" target="_blank" style="color:var(--blue);">Google Doodles</a> 的一个<b>非官方复刻版</b>，
+        用于学习和研究。共收录 <b id="cnt">6375</b> 个涂鸦，含图片与文字介绍。
+      </p>
+
+      <h3 style="margin:22px 0 10px;">Creating a Doodle · 涂鸦是如何诞生的</h3>
+      <ul style="margin-left:20px;color:#3c4043;font-size:14px;line-height:1.9;">
+        <li>1998 年，Google 创始人为了表明他们去参加火人节（Burning Man）不在办公室，制作了第一个涂鸦。</li>
+        <li>2000 年，设计师黄正穆通过法国国庆日涂鸦确立了创作传统，成为首位专职涂鸦设计师。</li>
+        <li>创作团队被称为 <b>Doodler</b>（涂鸦师），他们负责从草图到上线的全过程。</li>
+        <li>涂鸦分为静态（Static）、动画（Animated）、幻灯片（Storybook）、视频（Video）和互动游戏（Interactive Game）等多种形式。</li>
+        <li>每年全球会发布数百个涂鸦，同一时间世界各地可能展示着不同的涂鸦。</li>
+        <li>最常出现的涂鸦角色是 Momo the Cat——以团队里的真实猫咪命名。</li>
+      </ul>
+
+      <h3 style="margin:22px 0 10px;">About · 关于本站</h3>
+      <ul style="margin-left:20px;color:#3c4043;font-size:14px;line-height:1.9;">
+        <li><b>数据</b>：全部 6375 个涂鸦的图片 + 标题/日期/描述文字，来自 Google Doodles 公开档案（sitemap 与各涂鸦页面）。</li>
+        <li><b>筛选</b>：颜色为主色自动分析；话题/风格为启发式分类（与 Google 官方不完全一致）；日期为页面标注的纪念日期。</li>
+        <li><b>技术</b>：纯静态页面（HTML/CSS/JS + JSON 数据），无后端、无登录。</li>
+      </ul>
+
+      <h3 style="margin:22px 0 10px;">Copyright · 版权声明</h3>
+      <p class="detail-desc" style="font-size:13px;color:var(--muted);">
+        所有涂鸦图片与文字版权归 <b>Google LLC</b> 所有。本站使用 gøøgle 品牌仅为区分非官方复刻版，与 Google 无任何关联。
+        本站内容仅限个人学习研究，<b>禁止商业使用</b>。如需商用请联系 Google 官方授权。
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="logo"><span class="g1">g</span><span class="g2">ø</span><span class="g3">ø</span><span class="g4">g</span><span class="g5">l</span><span class="g6">e</span></div>
+  <a href="library.html">Library</a>
+  <div class="right">© 2026 gøøgle · 非官方复刻 · 仅供学习研究</div>
+</footer>
+
+<script src="doodles_data.js"></script>
+<script>
+document.getElementById('cnt').textContent = (window.DOODLES || []).length || 6375;
+</script>
+</body>
+</html>

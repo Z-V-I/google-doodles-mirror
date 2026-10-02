@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gøøgle Doodles - 搜索引擎徽标的变化</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="logo" style="margin-right:8px;">
+    <span class="g1">g</span><span class="g2">ø</span><span class="g3">ø</span><span class="g4">g</span><span class="g5">l</span><span class="g6">e</span><span class="ball"></span>
+  </a>
+  <nav>
+    <a href="library.html">Library</a>
+    <a href="about.html">Creating a Doodle</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="spacer"></div>
+  <button class="btn btn-surprise" id="btnSurprise">给我惊喜 ✨</button>
+</header>
+
+<section class="hero">
+  <div class="logo logo-big">
+    <span class="g1">g</span><span class="g2">ø</span><span class="g3">ø</span><span class="g4">g</span><span class="g5">l</span><span class="g6">e</span><span class="ball"></span>
+  </div>
+  <h2>Celebrating culture, people, places and more</h2>
+  <form class="search-wrap" onsubmit="doSearch(event)">
+    <input type="text" class="search-input" id="q" placeholder="Search Doodles…" autocomplete="off">
+    <button type="submit" class="search-icon" aria-label="搜索">
+      <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </button>
+  </form>
+  <p class="tagline">gøøgle Doodles 是我们在节日、纪念日和重要事件期间对搜索引擎徽标的临时改动。这是一个复刻版，仅用于学习与研究。</p>
+</section>
+
+<section class="categories">
+  <div class="cat-card cat-culture" onclick="location.href='library.html?topic=culture'">
+    <span class="cat-icon">🎨</span>
+    <h3>Culture</h3>
+    <p>文化 · 艺术 · 音乐 · 文学</p>
+  </div>
+  <div class="cat-card cat-places" onclick="location.href='library.html?topic=places'">
+    <span class="cat-icon">🌍</span>
+    <h3>Places</h3>
+    <p>世界各地 · 城市 · 地标 · 国家</p>
+  </div>
+  <div class="cat-card cat-holidays" onclick="location.href='library.html?topic=holiday'">
+    <span class="cat-icon">🎉</span>
+    <h3>Holidays</h3>
+    <p>节日 · 传统 · 庆典</p>
+  </div>
+  <div class="cat-card cat-culture" onclick="location.href='library.html?topic=birthday'" style="background:linear-gradient(135deg,#7b4bc0,#b59ae0);">
+    <span class="cat-icon">🎂</span>
+    <h3>Birthdays</h3>
+    <p>生日 · 诞辰 · 名人纪念</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-title">Latest Doodles from around the world</div>
+  <div class="section-sub">世界各地的最新涂鸦</div>
+  <div class="grid" id="latestGrid"></div>
+</section>
+
+<section class="section" style="text-align:center;padding-bottom:10px;">
+  <p style="color:var(--muted);font-size:14px;margin-bottom:14px;">想随机看一个？</p>
+  <button class="btn btn-surprise" onclick="surprise()">🎲 给我惊喜</button>
+</section>
+
+<footer class="footer">
+  <div class="logo"><span class="g1">g</span><span class="g2">ø</span><span class="g3">ø</span><span class="g4">g</span><span class="g5">l</span><span class="g6">e</span></div>
+  <a href="library.html">Library</a>
+  <a href="about.html">Creating a Doodle</a>
+  <a href="about.html">About</a>
+  <div class="right">© 2026 gøøgle · 非官方复刻 · 仅供学习研究</div>
+</footer>
+
+<script src="doodles_data.js"></script>
+<script>
+var data = window.DOODLES || [];
+
+function escapeHtml(s) {
+  return (s || '').replace(/[&<>"']/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+  });
+}
+
+function cardHTML(r) {
+  var d = r.dateISO ? r.date : r.date || '';
+  var showDate = r.date || (r.dateISO ? r.dateISO : '');
+  var color = r.color || 'grey';
+  return '<div class="card" onclick="location.href=\'doodle.html?slug=' + encodeURIComponent(r.slug) + '\'">' +
+    '<img class="thumb" loading="lazy" src="' + encodeURIComponent(r.image_file) + '" alt="' + escapeHtml(r.title) + '">' +
+    '<div class="info"><div class="t">' + escapeHtml(r.title || r.slug) + '</div>' +
+    '<div class="d"><span class="dot color-' + color + '"></span>' + escapeHtml(showDate) + '</div></div></div>';
+}
+
+// 最新涂鸦: 数据已按日期降序, 有日期的在前
+(function () {
+  var grid = document.getElementById('latestGrid');
+  var latest = data.slice(0, 12);
+  grid.innerHTML = latest.map(cardHTML).join('');
+})();
+
+function doSearch(e) {
+  e.preventDefault();
+  var q = document.getElementById('q').value.trim();
+  location.href = 'library.html?q=' + encodeURIComponent(q);
+}
+
+function surprise() {
+  if (!data.length) return;
+  var r = data[Math.floor(Math.random() * data.length)];
+  location.href = 'doodle.html?slug=' + encodeURIComponent(r.slug);
+}
+document.getElementById('btnSurprise').addEventListener('click', surprise);
+</script>
+</body>
+</html>

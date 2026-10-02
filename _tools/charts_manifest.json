@@ -1,0 +1,68 @@
+{
+  "https://www.gstatic.com/charts/51/css/core/tooltip.css": {
+    "path": "vendor/charts/51/css/core/tooltip.css",
+    "sha256": "2cb6d99c8ba2262a4d0c6d0333a35b67be6d4db6c5a7d2c4a9cff74e5970e4f6",
+    "sha256_final": "2cb6d99c8ba2262a4d0c6d0333a35b67be6d4db6c5a7d2c4a9cff74e5970e4f6",
+    "size": 1524
+  },
+  "https://www.gstatic.com/charts/51/css/util/util.css": {
+    "path": "vendor/charts/51/css/util/util.css",
+    "sha256": "e9c9244f08810a7573b16fd89288d4587f617de4c005b3e4d74ee034b6dbf280",
+    "sha256_final": "e9c9244f08810a7573b16fd89288d4587f617de4c005b3e4d74ee034b6dbf280",
+    "size": 12720
+  },
+  "https://www.gstatic.com/charts/51/js/jsapi_compiled_default_module.js": {
+    "path": "vendor/charts/51/js/jsapi_compiled_default_module.js",
+    "sha256": "7e7e72eecf6a4fb2981627eb8d15b947d394398db4e67c7ca7705749cdb2f832",
+    "sha256_final": "28a81286408e7a509d1758a2899e0133f28a79999126300c4d550ae0d40d166d",
+    "size": 269360
+  },
+  "https://www.gstatic.com/charts/51/js/jsapi_compiled_geo_module.js": {
+    "path": "vendor/charts/51/js/jsapi_compiled_geo_module.js",
+    "sha256": "942d2f1d42ecb80ad20154c4c880839281b4e1f621854a3db03ea6ac304285a6",
+    "sha256_final": "950d79c7524bdcd36333544a164df116367456411eb1f387af0aa1ad5f0f7d97",
+    "size": 5957
+  },
+  "https://www.gstatic.com/charts/51/js/jsapi_compiled_geochart_module.js": {
+    "path": "vendor/charts/51/js/jsapi_compiled_geochart_module.js",
+    "sha256": "51d1bc719dfc930bdeab5a66c70087bf041d6e656fd662de9118b842d9e6524a",
+    "sha256_final": "753acbb2ca800054ed6a4e1e841603f12fbc0fb48d8669b33d17f7bb582df9b7",
+    "size": 40690
+  },
+  "https://www.gstatic.com/charts/51/js/jsapi_compiled_graphics_module.js": {
+    "path": "vendor/charts/51/js/jsapi_compiled_graphics_module.js",
+    "sha256": "9ad0d8bf9e4659eb773ec937a69b25c1e8869b17c43acd258f01e268f0194088",
+    "sha256_final": "9ad0d8bf9e4659eb773ec937a69b25c1e8869b17c43acd258f01e268f0194088",
+    "size": 24811
+  },
+  "https://www.gstatic.com/charts/51/js/jsapi_compiled_ui_module.js": {
+    "path": "vendor/charts/51/js/jsapi_compiled_ui_module.js",
+    "sha256": "0867ee1df230c80dc1601a8c56c499fabe444ab3ec173ce8b901444560c8816d",
+    "sha256_final": "0867ee1df230c80dc1601a8c56c499fabe444ab3ec173ce8b901444560c8816d",
+    "size": 519614
+  },
+  "https://www.gstatic.com/charts/51/loader.js": {
+    "path": "vendor/charts/51/loader.js",
+    "sha256": "15f9c7dcb6d3f3fd50ac55a55f8a4168652122756d7763c13c333c9d4b8a36f0",
+    "sha256_final": "fbf28fb367d12270312f19c14ff766a4f8b1f552f9492d04775672b67cca12c0",
+    "size": 48989
+  },
+  "https://www.gstatic.com/charts/geochart/10/info/mapList.js": {
+    "path": "vendor/charts/geochart/10/info/mapList.js",
+    "sha256": "a6696f96941c0d04d850c32bae12fc76a2b00007c6e3baa2f5adb06c5cd6db33",
+    "sha256_final": "a6696f96941c0d04d850c32bae12fc76a2b00007c6e3baa2f5adb06c5cd6db33",
+    "size": 6644
+  },
+  "https://www.gstatic.com/charts/geochart/10/mapfiles/world_COUNTRIES.js": {
+    "path": "vendor/charts/geochart/10/mapfiles/world_COUNTRIES.js",
+    "sha256": "3adf58cf233a53ddabb45b02e98fb7f93216cf1ea8b789a0080af9fe8a057c57",
+    "sha256_final": "3adf58cf233a53ddabb45b02e98fb7f93216cf1ea8b789a0080af9fe8a057c57",
+    "size": 218525
+  },
+  "https://www.gstatic.com/charts/loader.js": {
+    "path": "vendor/charts/loader.js",
+    "sha256": "369ae154eab37b7ada7776b934833183bb053ebd1d0255f70ef8944f65cabb0c",
+    "sha256_final": "924e1ec546e759ea83c2813f79a70f326ef8293098122f830225f5d2dbd88fcd",
+    "size": 62094
+  }
+}

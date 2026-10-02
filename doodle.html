@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doodle - gøøgle Doodles</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="logo" style="margin-right:8px;">
+    <span class="g1">g</span><span class="g2">ø</span><span class="g3">ø</span><span class="g4">g</span><span class="g5">l</span><span class="g6">e</span><span class="ball"></span>
+  </a>
+  <nav>
+    <a href="library.html">Library</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="spacer"></div>
+  <button class="btn btn-outline" onclick="history.back()">← 返回</button>
+</header>
+
+<div class="detail-wrap" id="detail"></div>
+
+<footer class="footer">
+  <div class="logo"><span class="g1">g</span><span class="g2">ø</span><span class="g3">ø</span><span class="g4">g</span><span class="g5">l</span><span class="g6">e</span></div>
+  <a href="library.html">Library</a>
+  <div class="right">© 2026 gøøgle · 非官方复刻 · 仅供学习研究</div>
+</footer>
+
+<script src="doodles_data.js"></script>
+<script>
+var data = window.DOODLES || [];
+
+function escapeHtml(s) {
+  return (s || '').replace(/[&<>"']/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+  });
+}
+function getParam(name) {
+  return new URLSearchParams(location.search).get(name) || '';
+}
+
+var COLOR_LABEL = {
+  red:'红', orange:'橙', yellow:'黄', green:'绿', cyan:'青', blue:'蓝',
+  purple:'紫', pink:'粉', grey:'灰', white:'白', black:'黑'
+};
+
+(function () {
+  var slug = getParam('slug');
+  var r = data.find(function(x){ return x.slug === slug; });
+  var el = document.getElementById('detail');
+
+  if (!r) {
+    el.innerHTML = '<div class="detail-card" style="padding:60px;text-align:center;"><h2>未找到该涂鸦</h2><p style="color:var(--muted);margin:10px 0 20px;">slug: ' + escapeHtml(slug) + '</p><a class="btn btn-primary" href="library.html">返回列表</a></div>';
+    document.title = '未找到 - gøøgle Doodles';
+    return;
+  }
+
+  document.title = (r.title || r.slug) + ' - gøøgle Doodles';
+
+  var topics = (r.topics || []).map(function(t){
+    return '<span class="chip">#' + escapeHtml(t) + '</span>';
+  }).join('');
+  var FMT_LABEL = { still:'静态图', animated:'动画 / GIF', game:'互动游戏', video:'视频', slideshow:'幻灯片' };
+  var chips = '<span class="chip">颜色: ' + escapeHtml(COLOR_LABEL[r.color] || r.color) + '</span>' +
+              '<span class="chip">格式: ' + (FMT_LABEL[r.format] || r.format) + '</span>' + topics;
+
+  var showDate = r.date || r.dateISO || '';
+
+  el.innerHTML =
+    '<div class="detail-card">' +
+      '<div class="detail-img-wrap"><img class="detail-img" src="' + encodeURIComponent(r.image_file) + '" alt="' + escapeHtml(r.title) + '"></div>' +
+      '<div class="detail-body">' +
+        '<h1 class="detail-title">' + escapeHtml(r.title || r.slug) + '</h1>' +
+        '<div class="detail-meta">' + (showDate ? '<span class="chip">📅 ' + escapeHtml(showDate) + '</span>' : '') + chips + '</div>' +
+        '<p class="detail-desc">' + escapeHtml(r.description || '（该涂鸦暂无详细描述。）') + '</p>' +
+        '<div class="detail-actions">' +
+          '<a class="btn btn-primary" target="_blank" href="' + escapeHtml(r.url) + '">🌐 查看原页面</a>' +
+          '<a class="btn btn-outline" href="' + encodeURIComponent(r.image_file) + '" download>⬇ 下载图片</a>' +
+          '<a class="btn btn-outline" href="library.html">📚 返回列表</a>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="detail-related"><h3>相关涂鸦</h3><div class="grid" id="relatedGrid"></div></div>';
+
+  // 相关推荐: 同话题
+  var related = data.filter(function(x){
+    return x.slug !== slug && (x.topics || []).some(function(t){ return (r.topics || []).indexOf(t) !== -1; });
+  }).slice(0, 6);
+
+  document.getElementById('relatedGrid').innerHTML = related.map(function(x){
+    var color = x.color || 'grey';
+    var showDate = x.date || x.dateISO || '';
+    return '<div class="card" onclick="location.href=\'doodle.html?slug=' + encodeURIComponent(x.slug) + '\'">' +
+      '<img class="thumb" loading="lazy" src="' + encodeURIComponent(x.image_file) + '" alt="' + escapeHtml(x.title) + '">' +
+      '<div class="info"><div class="t">' + escapeHtml(x.title || x.slug) + '</div>' +
+      '<div class="d"><span class="dot color-' + color + '"></span>' + escapeHtml(showDate) + '</div></div></div>';
+  }).join('');
+})();
+</script>
+</body>
+</html>

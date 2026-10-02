@@ -1,0 +1,534 @@
+{
+  "orphans": [
+    {
+      "path": "/assets/cms/cc/fd/a4448b5a4879bc991560f2513b7f/0923-oskarpicht-utediez.jpg",
+      "bytes": 35305577
+    },
+    {
+      "path": "/assets/cms/3c/1d/5e087c224416a95214816d593a46/26d.png",
+      "bytes": 24325613
+    },
+    {
+      "path": "/assets/cms/10/85/3394aec5418a8f2aee51e7995107/20d.png",
+      "bytes": 19251362
+    },
+    {
+      "path": "/assets/cms/2e/8d/dfce6c2e4bacaabd6d932c0434e1/8.png",
+      "bytes": 18458455
+    },
+    {
+      "path": "/assets/cms/2b/10/3d11fd1d4c32983d9aa0ccc227e4/30d.png",
+      "bytes": 17510780
+    },
+    {
+      "path": "/assets/cms/24/27/9e4390ee43d58aacb86d7b5a22d0/24d.png",
+      "bytes": 15939496
+    },
+    {
+      "path": "/assets/cms/52/91/7af128b74a51afbb2e12eede778e/36d.png",
+      "bytes": 13960595
+    },
+    {
+      "path": "/assets/cms/4c/2a/2ebc24514360900a81f480b1e1fb/29d.png",
+      "bytes": 11954326
+    },
+    {
+      "path": "/assets/cms/be/e0/c250d28e4721ab5c82f0018ddcf8/42d.jpg",
+      "bytes": 8983991
+    },
+    {
+      "path": "/assets/cms/71/e0/e857ec9b4a54bb79790ed00d60dd/33d.png",
+      "bytes": 8503336
+    },
+    {
+      "path": "/assets/cms/80/1a/fbd3bf6a465cb2673727c8d02c86/44d.png",
+      "bytes": 8431179
+    },
+    {
+      "path": "/assets/cms/ed/f0/c56c80804cf49bb933f46c1cc6eb/19d.png",
+      "bytes": 8025520
+    },
+    {
+      "path": "/assets/cms/9c/9d/be17de534ef699eed208b79354e5/39d.jpg",
+      "bytes": 7565821
+    },
+    {
+      "path": "/assets/cms/77/44/cffff25247d0899e1a6fbaa59d2a/3d.jpg",
+      "bytes": 7085957
+    },
+    {
+      "path": "/assets/cms/45/35/80d7ff504f27ad92a8d197cc6079/23d.png",
+      "bytes": 6151586
+    },
+    {
+      "path": "/assets/cms/71/09/82a4ca304c02a6c4b531aeced864/17.jpg",
+      "bytes": 6126242
+    },
+    {
+      "path": "/assets/cms/64/57/22d17d7144cbbe068aa88e2f263c/27d.jpg",
+      "bytes": 6112150
+    },
+    {
+      "path": "/assets/cms/2a/8a/99d5df734eb8a9beb8fb25302957/40d.jpg",
+      "bytes": 5612730
+    },
+    {
+      "path": "/assets/cms/26/44/692639a3479d9f19679003e941cd/31d.jpg",
+      "bytes": 4606110
+    },
+    {
+      "path": "/assets/cms/1b/e1/4e32e24c4672a98cdd0b34f0cd29/19.png",
+      "bytes": 4375205
+    },
+    {
+      "path": "/assets/cms/b5/25/602f2545425798bd1b85389cc17d/32.png",
+      "bytes": 3464326
+    },
+    {
+      "path": "/assets/cms/e3/96/56a5d2c54ab1abcc0abedabc3f58/37d.jpg",
+      "bytes": 3461596
+    },
+    {
+      "path": "/assets/cms/0f/df/334b1e9c4a46b5a2300e2ed3dd65/41d.jpg",
+      "bytes": 3109866
+    },
+    {
+      "path": "/assets/cms/8c/ec/130daec04ddaa76aae9af188910d/38d.png",
+      "bytes": 2863344
+    },
+    {
+      "path": "/assets/cms/7b/68/e4b427774fdb92b76370314f11ff/13.png",
+      "bytes": 1994783
+    },
+    {
+      "path": "/assets/cms/8c/07/afe7cb0c4531af87562f09aa0a78/50.jpg",
+      "bytes": 1757305
+    },
+    {
+      "path": "/assets/cms/86/69/707f3a93472a8ed517e39193b5d0/6.jpeg",
+      "bytes": 1565617
+    },
+    {
+      "path": "/assets/cms/25/64/1d296561411088a2136ff769df8a/09-16-2024-mexicoindependenceday-charlesglaubitz-selfportrait.jpg",
+      "bytes": 1426056
+    },
+    {
+      "path": "/assets/cms/06/87/da52893f44d3ad0caee8c996691d/16.png",
+      "bytes": 1324534
+    },
+    {
+      "path": "/assets/cms/10/f8/ebaf875e460fb6503093ca644bbd/4.png",
+      "bytes": 1177649
+    },
+    {
+      "path": "/assets/cms/fa/af/b97e68184effbcac9a13f507e15b/celebrating-dorothy-miles-6753651837110273-2xa.gif",
+      "bytes": 962500
+    },
+    {
+      "path": "/assets/cms/6f/15/1ac5cbfe4252a132d39e5fa364cc/derekabelladoodleportrait.jpg",
+      "bytes": 945280
+    },
+    {
+      "path": "/assets/cms/ec/54/a58622fc42848e2f963fe4e44dd8/screenshot-2024-09-30-at-12-05-36-pm.png",
+      "bytes": 921931
+    },
+    {
+      "path": "/assets/cms/65/ea/1b0fcfeb40c392a3f94f67bf4e0c/6d.png",
+      "bytes": 910781
+    },
+    {
+      "path": "/assets/cms/b6/fc/ae9c3d8049e788dd7e4ce94057c3/11-09-2024-maureenwatson-rubiired.jpg",
+      "bytes": 881564
+    },
+    {
+      "path": "/assets/cms/bb/35/30dea31845ceb59af53a862a556f/screenshot-2025-07-15-at-5-06-09-pm.png",
+      "bytes": 879013
+    },
+    {
+      "path": "/assets/cms/93/c2/aeb138f244778b4f2ea7832012cc/celebrating-oskar-picht-6753651837110226-2x.png",
+      "bytes": 864459
+    },
+    {
+      "path": "/assets/cms/35/fb/84ad27e2490abc78ceefe9de535e/image.jpeg",
+      "bytes": 857648
+    },
+    {
+      "path": "/assets/cms/0a/c5/dd8168b745a395cc43760fd57f63/16d.png",
+      "bytes": 830030
+    },
+    {
+      "path": "/assets/cms/ad/f7/deb338d94f9583a423bd5101372b/2.png",
+      "bytes": 820502
+    },
+    {
+      "path": "/assets/cms/4e/83/90f9c8f749498e48f09a5071a856/indonesia-independence-day-2024-6753651837110272-2x.png",
+      "bytes": 741156
+    },
+    {
+      "path": "/assets/cms/0e/50/b50fd53344bfb779f42fefc87b60/celebrating-iboshi-hokuto-6753651837110303-2x.png",
+      "bytes": 739622
+    },
+    {
+      "path": "/assets/cms/33/9e/9558a9be46478044805ca2d57dd8/14.jpg",
+      "bytes": 712285
+    },
+    {
+      "path": "/assets/cms/8c/9f/b91afb394c0f8f75ed93e76a4aaa/3.png",
+      "bytes": 691831
+    },
+    {
+      "path": "/assets/cms/ff/93/023c62014bdbb00ca56b8a5bf4f7/7d.png",
+      "bytes": 665599
+    },
+    {
+      "path": "/assets/cms/fe/3e/8ddc032741ca9460755305fde10d/mexico-independence-day-2024-6753651837110294-2x.png",
+      "bytes": 632064
+    },
+    {
+      "path": "/assets/cms/ba/9d/ae23f4ca42e4aaac3cfb4644c4da/45d.png",
+      "bytes": 610573
+    },
+    {
+      "path": "/assets/cms/f7/ed/529772e044d58a6785ba7f299946/1.png",
+      "bytes": 481824
+    },
+    {
+      "path": "/assets/cms/7b/b6/1da2a81944099e90f1d00f8d4ab4/27.png",
+      "bytes": 447158
+    },
+    {
+      "path": "/assets/cms/19/64/7377837543978ff0a0d5711a21cf/7.png",
+      "bytes": 439558
+    },
+    {
+      "path": "/assets/cms/96/60/e0867ec849cbb4c32c5b9f94cd89/18.jpg",
+      "bytes": 427658
+    },
+    {
+      "path": "/assets/cms/f2/13/4c42c9624ad8a8a7c686dbd1f863/43.jpg",
+      "bytes": 389635
+    },
+    {
+      "path": "/assets/cms/b5/dd/1349c919498c8285b6abffe94c40/35d.png",
+      "bytes": 373489
+    },
+    {
+      "path": "/assets/cms/8f/e5/6d61d17648208e5ca23e5481f4f6/21.jpg",
+      "bytes": 354737
+    },
+    {
+      "path": "/assets/cms/f4/87/75cf06504c1b95cfa886f153f23e/25.jpg",
+      "bytes": 347233
+    },
+    {
+      "path": "/assets/cms/e3/16/e9bbec574a1da1eb2c71538622a3/48d.gif",
+      "bytes": 315942
+    },
+    {
+      "path": "/assets/cms/fc/ba/a9ed083c41eeae80216930755c96/08-17-indonesiaindependenceday-monez.jpeg",
+      "bytes": 299298
+    },
+    {
+      "path": "/assets/cms/6c/92/7488d1f34ce18eb2f07002d9ad1a/13d.gif",
+      "bytes": 280817
+    },
+    {
+      "path": "/assets/cms/03/03/c3646b4b408a8ac0617508e83a14/40.jpg",
+      "bytes": 277006
+    },
+    {
+      "path": "/assets/cms/80/6c/dc8549e449e5b47bf5dca32c6587/48.jpg",
+      "bytes": 276427
+    },
+    {
+      "path": "/assets/cms/9d/98/e595dafc4591bc82d9039e5d2516/5.png",
+      "bytes": 274723
+    },
+    {
+      "path": "/assets/cms/90/23/ab08df114a52a5ce683fe7308a7f/2d.png",
+      "bytes": 271265
+    },
+    {
+      "path": "/assets/cms/5f/e7/309a4b15404fa554b20b28fe4059/5d.png",
+      "bytes": 252402
+    },
+    {
+      "path": "/assets/cms/39/eb/88750e614d2b8914deecd8091d42/celebrating-the-kayak-6753651837110586-2x.png",
+      "bytes": 241955
+    },
+    {
+      "path": "/assets/cms/b5/74/43681fe0479bac5a0836f34b72ff/22.jpg",
+      "bytes": 240899
+    },
+    {
+      "path": "/assets/cms/1b/82/546f0c9c41fc965de8a06bcf7c1b/untitled-presentation-2.png",
+      "bytes": 240542
+    },
+    {
+      "path": "/assets/cms/82/ed/613eae0d44238c9c3fb0ccaabff9/25d.png",
+      "bytes": 235675
+    },
+    {
+      "path": "/assets/cms/d8/91/11d47865481d982583b02bafdb95/32d.png",
+      "bytes": 228531
+    },
+    {
+      "path": "/assets/cms/b0/7f/40a1bc2b472494adeb08ceb59a18/15.jpg",
+      "bytes": 227077
+    },
+    {
+      "path": "/assets/cms/3a/aa/ff7c20e342929d25afd26c56464d/49.jpg",
+      "bytes": 223699
+    },
+    {
+      "path": "/assets/cms/2b/8d/678112964fcc97ff3339580a3790/10.jpg",
+      "bytes": 206641
+    },
+    {
+      "path": "/assets/cms/03/1e/368bee3e417ebe143a25ac29dc9f/1d.png",
+      "bytes": 187373
+    },
+    {
+      "path": "/assets/cms/4c/be/e332e7b74d8bb5cd717a9875d502/4d.png",
+      "bytes": 186780
+    },
+    {
+      "path": "/assets/cms/5f/9e/391d1af3424aad02d9a32aa5867d/46.png",
+      "bytes": 181309
+    },
+    {
+      "path": "/assets/cms/68/82/ee308a5649cb97e24a1088e8c922/26.jpg",
+      "bytes": 179029
+    },
+    {
+      "path": "/assets/cms/ae/cc/197eec95409c9a07f888c3a57657/11.jpg",
+      "bytes": 177917
+    },
+    {
+      "path": "/assets/cms/96/14/c8ac26c94d739db90cc67b0bb832/34d.png",
+      "bytes": 177502
+    },
+    {
+      "path": "/assets/cms/46/54/f606504346158161828c84814448/47.jpg",
+      "bytes": 166632
+    },
+    {
+      "path": "/assets/cms/ea/ad/e34c9a154d7bb8dee38ea4653409/9.jpg",
+      "bytes": 166632
+    },
+    {
+      "path": "/assets/cms/ae/c3/68f9f93b4278b365b58f20d41b06/12.jpg",
+      "bytes": 165687
+    },
+    {
+      "path": "/assets/cms/69/31/1c96a13448eab966bac5b91ed292/43d.png",
+      "bytes": 164970
+    },
+    {
+      "path": "/assets/cms/37/6a/88f59d2947058a13a360e07af13e/celebrating-emerson-romero-6753651837110274-2x.png",
+      "bytes": 159572
+    },
+    {
+      "path": "/assets/cms/79/88/fb5b36334332970c1ce0368b3efc/22d.png",
+      "bytes": 152954
+    },
+    {
+      "path": "/assets/cms/e2/3c/0f2c822242419e5e17e672849238/47d.gif",
+      "bytes": 148257
+    },
+    {
+      "path": "/assets/cms/99/45/a6b096544f948e37ff494d1c3d12/31.jpg",
+      "bytes": 148078
+    },
+    {
+      "path": "/assets/cms/41/d0/4651c6e1402dbe8ce9f77d08c1df/24.jpg",
+      "bytes": 147416
+    },
+    {
+      "path": "/assets/cms/fb/5e/12440579407f9ae6c99fc0b4c6df/37.jpg",
+      "bytes": 143972
+    },
+    {
+      "path": "/assets/cms/66/65/ea356fad41cfbcc0075abe5b3b59/50d.gif",
+      "bytes": 142316
+    },
+    {
+      "path": "/assets/cms/d2/33/d99714614ed2845a540ec4008d90/39.jpg",
+      "bytes": 141273
+    },
+    {
+      "path": "/assets/cms/6c/52/bca216834d7e8605733effa7620d/46d.png",
+      "bytes": 135318
+    },
+    {
+      "path": "/assets/cms/94/b8/834ca1c64d84b50c7a6f29744cfd/41.jpg",
+      "bytes": 133482
+    },
+    {
+      "path": "/assets/cms/cb/3d/931bbee849dbb93c93f20aab9b7b/21d.png",
+      "bytes": 130954
+    },
+    {
+      "path": "/assets/cms/2b/2a/0a52ebdb40fca40bcb37dfa69d99/0819-dorothymiles-youmeelee.jpg",
+      "bytes": 126787
+    },
+    {
+      "path": "/assets/cms/b6/86/1dc8bd934858bece1a9e3146aeed/15d.png",
+      "bytes": 120443
+    },
+    {
+      "path": "/assets/cms/47/bd/72dde962494cbcfee811cd909d1c/celebrating-maureen-watson-6753651837110582-2x.png",
+      "bytes": 116172
+    },
+    {
+      "path": "/assets/cms/a5/4c/feccbd954f5ebf4f23c5956ee512/34.png",
+      "bytes": 115362
+    },
+    {
+      "path": "/assets/cms/08/9e/67d43c334600ac4d2a2eeb9dfc55/36.jpg",
+      "bytes": 99516
+    },
+    {
+      "path": "/assets/cms/85/0b/68cda5a74613911b5ff4093d8d63/49d.gif",
+      "bytes": 95087
+    },
+    {
+      "path": "/assets/cms/60/20/4a726a0b4038b40b8829c2670e37/18d.png",
+      "bytes": 93293
+    },
+    {
+      "path": "/assets/cms/72/03/ec1eee374a679508af5003e6c3f7/28d.png",
+      "bytes": 91631
+    },
+    {
+      "path": "/assets/cms/69/d8/9d6ed2884a6b8af7273c54cbe23c/35.jpg",
+      "bytes": 89142
+    },
+    {
+      "path": "/assets/cms/86/ee/d0ce66414ae49e200e9f7abab94d/30.jpg",
+      "bytes": 87055
+    },
+    {
+      "path": "/assets/cms/c0/36/2e5afb404f08b36998796df79941/koji-yuki-portrait-1399119.webp",
+      "bytes": 86610
+    },
+    {
+      "path": "/assets/cms/ed/ee/2dc29fd44fea8aca96b3d301edca/23.jpg",
+      "bytes": 81265
+    },
+    {
+      "path": "/assets/cms/37/bf/34e1a39c4fc09bb92339f6f42a3d/33.jpg",
+      "bytes": 54028
+    },
+    {
+      "path": "/assets/cms/7e/86/af641de940718f420c7a25b5e7a6/28.png",
+      "bytes": 53015
+    },
+    {
+      "path": "/assets/cms/9e/2f/fe54962e43f2950e0c180e835e40/45.jpg",
+      "bytes": 52556
+    },
+    {
+      "path": "/assets/cms/12/05/9acdc93c438285c0f1ce5655e440/42.png",
+      "bytes": 52091
+    },
+    {
+      "path": "/assets/cms/25/9d/3efda0d941e7b7542cbbe07ed925/10d.png",
+      "bytes": 46878
+    },
+    {
+      "path": "/assets/cms/cd/2e/7ef9a45141499397a5d39f61b5a1/38.jpg",
+      "bytes": 43903
+    },
+    {
+      "path": "/assets/cms/c7/f4/482449d74ac098197c51af6d6ce1/14d.png",
+      "bytes": 42919
+    },
+    {
+      "path": "/assets/cms/a9/cd/c901752342ed8104f88fb40c88ce/20.jpg",
+      "bytes": 41597
+    },
+    {
+      "path": "/assets/cms/c7/f6/4fa8bb024445acd840394239ce57/german-unity-day-2024-6753651837110304-l.png",
+      "bytes": 38416
+    },
+    {
+      "path": "/assets/cms/92/ae/fe2dc4144a30a96e0515e3b28705/12d.png",
+      "bytes": 35805
+    },
+    {
+      "path": "/assets/cms/bc/dd/457a2cfe4a7b93f8fe0d9f968b3e/44.jpg",
+      "bytes": 34368
+    },
+    {
+      "path": "/assets/cms/47/88/24f420e7465c8dc6a7feeb45018a/bastille-day-2025-6753651837110667-2-l.png",
+      "bytes": 32977
+    },
+    {
+      "path": "/assets/cms/11/71/28eb79f344faaabfc241c31120f5/bbking.jpeg",
+      "bytes": 28627
+    },
+    {
+      "path": "/assets/cms/94/2f/9791fa7b4c269bca5748d2bb8f33/17d.png",
+      "bytes": 26189
+    },
+    {
+      "path": "/assets/cms/59/ed/0f75b47d4da79b816a52d6e7ea42/29.jpg",
+      "bytes": 25070
+    },
+    {
+      "path": "/assets/cms/17/72/a76615614468a398a955852339e9/9d.png",
+      "bytes": 22949
+    },
+    {
+      "path": "/assets/cms/31/b1/2a887b1c4e6aa44546d761899c1a/11d.png",
+      "bytes": 19872
+    },
+    {
+      "path": "/assets/cms/57/60/58b4db7d461e99e60192e116f889/8d.png",
+      "bytes": 15637
+    },
+    {
+      "path": "/assets/cms/fe/83/7ff0301c4a9c9b684a9648d8672a/teacher.jpeg",
+      "bytes": 7281
+    }
+  ],
+  "keep_cms": [
+    "assets/cms/21/aa/880950ef4a22aa6507f00c9750c3/image-15.png",
+    "assets/cms/26/80/e01a695949da8e5b5f9f41872532/3.gif",
+    "assets/cms/26/84/c4f24dae4921a1492c208172f40b/3.jpeg",
+    "assets/cms/28/5b/1610e5b948b598eb6f2736c58da6/2.gif",
+    "assets/cms/34/93/cb3194c340e08ec76fefa70fc26e/2.jpeg",
+    "assets/cms/40/02/654510714127b2285730420eab62/1.jpeg",
+    "assets/cms/73/57/654adddd4548986c95144b4c6724/4.gif",
+    "assets/cms/75/21/0f8b171c4f9f81869c48f9938cfb/1.jpeg",
+    "assets/cms/77/30/b411060342e9982db6e619d9ad3b/3.gif",
+    "assets/cms/89/13/da2ac5ea4389948ccf16d87e0dc2/1.jpeg",
+    "assets/cms/91/ae/2bc4a67f43a78ba021c24e0e4ca6/1.gif",
+    "assets/cms/97/f2/452090124ac4a45e7c2927d19c60/2.jpeg",
+    "assets/cms/bb/ba/e3ca925c4e9b95a2ee59923e807a/3.png",
+    "assets/cms/be/a2/be207cdd4ad8a3765438cddf1df4/6.jpeg",
+    "assets/cms/c2/de/b1ea4f8d4314be89cbd66a6c94d7/4.gif",
+    "assets/cms/cc/58/37beda8c411eb2db008769e10354/2.gif",
+    "assets/cms/d9/16/a208534c42c9a717b511baa6001d/5.jpeg",
+    "assets/cms/e0/3a/e3cf1cda49069699caede8f8427d/halloween-loop.gif"
+  ],
+  "files": 18223,
+  "built_at": 1790892175.7788324,
+  "bytes": 2330725871,
+  "oversized": [],
+  "problems": [],
+  "image_opt": {
+    "variants": 3913,
+    "variant_bytes": 197795880,
+    "home_card_imgs": 16,
+    "home_variant": 14,
+    "detail_checked": 5,
+    "detail_card_variant": 26,
+    "detail_main_intact": 5,
+    "lazy": 56,
+    "srcPinned": true,
+    "first_screen_orig": 7380205,
+    "first_screen_opt": 970341
+  }
+}

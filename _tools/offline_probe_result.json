@@ -1,0 +1,210 @@
+{
+  "baseline": {
+    "clients2.google.com": 1,
+    "update.googleapis.com": 1,
+    "www.gstatic.com": 1,
+    "www.google.com": 4
+  },
+  "baseline_raw": [
+    [
+      "GET",
+      "http://clients2.google.com/time/1/current?cup2key=10:7yOjJjhRKr5jQY05J9aKvPk87AoLi_z8LnBw9D6xh4M&cup2hreq=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    [
+      "CONNECT",
+      "update.googleapis.com:443"
+    ],
+    [
+      "CONNECT",
+      "www.gstatic.com:443"
+    ],
+    [
+      "CONNECT",
+      "www.google.com:443"
+    ],
+    [
+      "CONNECT",
+      "www.google.com:443"
+    ],
+    [
+      "CONNECT",
+      "www.google.com:443"
+    ],
+    [
+      "CONNECT",
+      "www.google.com:443"
+    ]
+  ],
+  "pages": [
+    {
+      "name": "01-home",
+      "url": "http://127.0.0.1:8765/",
+      "ok": true,
+      "bytes": 533291,
+      "counts": {
+        "clients2.google.com": 1,
+        "www.gstatic.com": 1,
+        "update.googleapis.com": 1,
+        "accounts.google.com": 1,
+        "www.google.com": 5
+      },
+      "delta_over_baseline": {
+        "accounts.google.com": 1,
+        "www.google.com": 1
+      }
+    },
+    {
+      "name": "02-search",
+      "url": "http://127.0.0.1:8765/search/",
+      "ok": true,
+      "bytes": 854709,
+      "counts": {
+        "clients2.google.com": 1,
+        "update.googleapis.com": 1,
+        "www.gstatic.com": 1,
+        "accounts.google.com": 2,
+        "www.google.com": 6
+      },
+      "delta_over_baseline": {
+        "accounts.google.com": 2,
+        "www.google.com": 2
+      }
+    },
+    {
+      "name": "03-search-pac",
+      "url": "http://127.0.0.1:8765/search/?title_like=pac",
+      "ok": true,
+      "bytes": 617979,
+      "counts": {
+        "clients2.google.com": 1,
+        "www.gstatic.com": 1,
+        "update.googleapis.com": 1,
+        "accounts.google.com": 1,
+        "www.google.com": 6
+      },
+      "delta_over_baseline": {
+        "accounts.google.com": 1,
+        "www.google.com": 2
+      }
+    },
+    {
+      "name": "04-search-topic",
+      "url": "http://127.0.0.1:8765/search/?topic_tags=Birthday",
+      "ok": true,
+      "bytes": 808531,
+      "counts": {
+        "clients2.google.com": 1,
+        "www.gstatic.com": 1,
+        "update.googleapis.com": 1,
+        "accounts.google.com": 2,
+        "www.google.com": 6
+      },
+      "delta_over_baseline": {
+        "accounts.google.com": 2,
+        "www.google.com": 2
+      }
+    },
+    {
+      "name": "05-about",
+      "url": "http://127.0.0.1:8765/about/",
+      "ok": true,
+      "bytes": 300743,
+      "counts": {
+        "clients2.google.com": 1,
+        "www.gstatic.com": 1,
+        "update.googleapis.com": 1,
+        "accounts.google.com": 1,
+        "www.google.com": 6
+      },
+      "delta_over_baseline": {
+        "accounts.google.com": 1,
+        "www.google.com": 2
+      }
+    },
+    {
+      "name": "06-creating",
+      "url": "http://127.0.0.1:8765/creating-a-doodle/",
+      "ok": true,
+      "bytes": 640449,
+      "counts": {
+        "clients2.google.com": 1,
+        "update.googleapis.com": 1,
+        "www.gstatic.com": 1,
+        "accounts.google.com": 2,
+        "www.google.com": 6
+      },
+      "delta_over_baseline": {
+        "accounts.google.com": 2,
+        "www.google.com": 2
+      }
+    },
+    {
+      "name": "07-doodle-still",
+      "url": "http://127.0.0.1:8765/doodle/celebrating-the-staurikosaurus/",
+      "ok": true,
+      "bytes": 874421,
+      "counts": {
+        "clients2.google.com": 1,
+        "update.googleapis.com": 1,
+        "www.gstatic.com": 1,
+        "accounts.google.com": 1,
+        "www.google.com": 6
+      },
+      "delta_over_baseline": {
+        "accounts.google.com": 1,
+        "www.google.com": 2
+      }
+    },
+    {
+      "name": "08-doodle-game",
+      "url": "http://127.0.0.1:8765/doodle/30th-anniversary-of-pac-man/",
+      "ok": true,
+      "bytes": 156629,
+      "counts": {
+        "clients2.google.com": 1,
+        "www.gstatic.com": 1,
+        "accounts.google.com": 1,
+        "update.googleapis.com": 1,
+        "www.google.com": 6
+      },
+      "delta_over_baseline": {
+        "accounts.google.com": 1,
+        "www.google.com": 2
+      }
+    },
+    {
+      "name": "09-doodle-mobile",
+      "url": "http://127.0.0.1:8765/doodle/fourth-of-july-2022/",
+      "ok": true,
+      "bytes": 288683,
+      "counts": {
+        "clients2.google.com": 1,
+        "www.gstatic.com": 1,
+        "accounts.google.com": 1,
+        "update.googleapis.com": 1,
+        "www.google.com": 5
+      },
+      "delta_over_baseline": {
+        "accounts.google.com": 1,
+        "www.google.com": 1
+      }
+    },
+    {
+      "name": "10-game-raw",
+      "url": "http://127.0.0.1:8765/games/30th-anniversary-of-pac-man/pacman10-hp.html",
+      "ok": true,
+      "bytes": 12892,
+      "counts": {
+        "clients2.google.com": 1,
+        "www.gstatic.com": 1,
+        "accounts.google.com": 1,
+        "update.googleapis.com": 1,
+        "www.google.com": 5
+      },
+      "delta_over_baseline": {
+        "accounts.google.com": 1,
+        "www.google.com": 1
+      }
+    }
+  ]
+}
